@@ -1,0 +1,90 @@
+Week 1, Day 1
+
+Lab Git Oriana Genolet 
+
+Instructions 
+
+First of all, install git if you don't have it yet, and create a GitHub account. (_In case you haven't made it to the bonus section in the Prework, refer to the lesson "Install Git and Create GitHub Account", that you will find there. Follow the guidelines given there. Additionally, you can use these resources: [Install git](https://git-scm.com/downloads), [Version control with git](http://swcarpentry.github.io/git-novice/)_)
+
+Create a new repository in GitHub. Name it `Iron`+ your name. Example: if your name is _Alvaro_, you will name the repo `IronAlvaro`.
+
+Clone that repo to your computer.
+
+Create a file in that folder. Name it `about.txt` and add a fun fact about yourself. (_You can use the command line: `touch nameOfTheFile.txt`_).
+
+Add the file you just created to git.
+
+Commit the change.
+
+Add the file you just created to the git.
+
+Commit the changes.
+
+Push the changes to the GitHub and check your repository to make sure everything is there.
+
+
+Answers 
+
+
+(base) origenolet@aircabrelet Day1 %  git clone https://github.com/genolet/IronOriana.git
+Cloning into 'IronOriana'...
+warning: You appear to have cloned an empty repository.
+(base) origenolet@aircabrelet Day1 % cd ./IronOriana
+(base) origenolet@aircabrelet IronOriana % touch aboutOrina.txt
+(base) origenolet@aircabrelet IronOriana % ls
+aboutOrina.txt
+(base) origenolet@aircabrelet IronOriana % echo "Hi! I am Oriana and I really li
+ke plants" >> aboutOriana.txt
+(base) origenolet@aircabrelet IronOriana % cat aboutOriana.txt
+Hi! I am Oriana and I really like plants
+(base) origenolet@aircabrelet IronOriana % cd ../
+(base) origenolet@aircabrelet Day1 % cd ./IronOriana
+(base) origenolet@aircabrelet IronOriana % git init
+Reinitialized existing Git repository in /Users/origenolet/Desktop/Ironhack/Week1/Day1/IronOriana/.git/
+(base) origenolet@aircabrelet IronOriana % git add aboutOriana.txt
+(base) origenolet@aircabrelet IronOriana % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   aboutOriana.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	aboutOrina.txt
+
+(base) origenolet@aircabrelet IronOriana % git commit -m ("I added a new file ab
+outOriana")
+zsh: unknown file attribute:
+(base) origenolet@aircabrelet IronOriana % git commit -m "I added a new file aboutOriana"
+[master (root-commit) 0334e07] I added a new file aboutOriana
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutOriana.txt
+(base) origenolet@aircabrelet IronOriana % git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	aboutOrina.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) origenolet@aircabrelet IronOriana % gut push origin master
+zsh: command not found: gut
+(base) origenolet@aircabrelet IronOriana % git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/genolet/IronOriana.git
+ * [new branch]      master -> master
+
+
+For the second part of the lab I forked Yadongs repository, cloned it into my Week1, Day1 folder, branched it, made the changes, (Oriana.txt file), added, committed and pushed the changes and then I made the pull request. Yadong did the same with my repository, now I have her file and she has mine. I actually didn’t write the code because at some point I did a clear and I forgot to paste it. But here is the link to my repository first, and then to Yadongs repository. 
+
+https://github.com/genolet/IronOriana.git
+
+https://github.com/dongspark/IronYadong.git
